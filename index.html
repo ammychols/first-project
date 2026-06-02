@@ -32,9 +32,8 @@
   .hero-cd .cnum{font-family:'Fraunces','IBM Plex Sans Thai',serif;font-size:3.5rem;font-weight:300;color:#fff;line-height:1;}
   .hero-cd .clabel{font-size:.9rem;color:rgba(251,249,243,.6);margin-top:4px;}
 
-  .tab-nav{position:sticky;top:0;z-index:100;background:var(--paper);border-bottom:2px solid var(--line);display:flex;overflow-x:auto;scrollbar-width:none;}
-  .tab-nav::-webkit-scrollbar{display:none;}
-  .tab-btn{flex:1;min-width:max-content;padding:14px 12px;font-family:'IBM Plex Sans Thai',sans-serif;font-size:.88rem;font-weight:500;color:var(--stone);background:none;border:none;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;transition:color .2s,border-color .2s;white-space:nowrap;}
+  .tab-nav{position:sticky;top:0;z-index:100;background:var(--paper);border-bottom:2px solid var(--line);display:flex;}
+  .tab-btn{flex:1;padding:12px 4px;font-family:'IBM Plex Sans Thai',sans-serif;font-size:.82rem;font-weight:500;color:var(--stone);background:none;border:none;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;transition:color .2s,border-color .2s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;}
   .tab-btn.active{color:var(--rust);border-bottom-color:var(--rust);}
   .tab-btn:hover{color:var(--moss);}
   .tab-panel{display:none;padding:0 0 80px;}
@@ -229,10 +228,10 @@
 </header>
 
 <nav class="tab-nav">
-  <button class="tab-btn active" data-tab="itin">🗺️ แผนการเดินทาง</button>
+  <button class="tab-btn active" data-tab="itin">🗺️ แผนทริป</button>
   <button class="tab-btn" data-tab="budget">💰 งบประมาณ</button>
   <button class="tab-btn" data-tab="checklist">✅ เช็กลิสต์</button>
-  <button class="tab-btn" data-tab="info">🏔️ ข้อมูลทริป</button>
+  <button class="tab-btn" data-tab="info">🏔️ ข้อมูล</button>
 </nav>
 
 <!-- ITINERARY -->
